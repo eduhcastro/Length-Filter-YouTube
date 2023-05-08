@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Length Filter for YouTube",
+  "version": "1.0",
+  "author": "eduhcastro",
+  "description": "Adiciona opções 'Mais curtos' e 'Mais longos' na página de vídeos de um canal no YouTube",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*/videos"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ]
+}
